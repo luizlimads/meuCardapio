@@ -6,6 +6,7 @@ import { CardapioPage } from './cardapio.page';
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 
 import { CardapioPageRoutingModule } from './cardapio-routing.module';
+import { ComponentsModule } from '../components.module';
 
 @NgModule({
   imports: [
@@ -13,7 +14,8 @@ import { CardapioPageRoutingModule } from './cardapio-routing.module';
     CommonModule,
     FormsModule,
     ExploreContainerComponentModule,
-    CardapioPageRoutingModule
+    CardapioPageRoutingModule,
+    ComponentsModule
   ],
   declarations: [CardapioPage]
 })

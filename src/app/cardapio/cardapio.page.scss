@@ -1,7 +1,25 @@
-.card-dia {
-    background-color: green;
+.toolbar {
+    --background: #d45500ff;
+    border-radius: 0% 0% 20% 20%;
+    border-color: #552200ff;
 }
 
-.card-refeicao {
-    background-color: hotpink;
+ion-row {
+    background: #552200ff;
+    display: flex;
+	flex-wrap: nowrap;
+	overflow-x: scroll;
+    height: 100%;
+    width: auto;
+}
+
+.coluna {
+    min-width: 275px;
+}
+
+.content {
+    height: 100%;
+    background: #552200ff;
+
+
 }
