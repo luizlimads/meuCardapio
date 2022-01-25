@@ -15,7 +15,7 @@ import { ComponentsModule } from '../components.module';
     FormsModule,
     ExploreContainerComponentModule,
     CardapioPageRoutingModule,
-    ComponentsModule
+    ComponentsModule,
   ],
   declarations: [CardapioPage]
 })

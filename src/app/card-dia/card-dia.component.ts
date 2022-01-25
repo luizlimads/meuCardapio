@@ -6,6 +6,8 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./card-dia.component.scss'],
 })
 export class CardDiaComponent {
-  @Input() nome: string;
+  @Input() nome: [];
+  @Input() refsDia: [];
+  @Input() itens: [];
 
 }

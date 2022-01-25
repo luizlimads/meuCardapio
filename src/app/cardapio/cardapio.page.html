@@ -11,7 +11,13 @@
 <ion-content [fullscreen]="true" class="content">
   <ion-row>
     <ion-col class="coluna">
-      <app-card-dia  [nome]="'Domingo'"></app-card-dia>
+      <app-card-dia 
+      [nome]="'Domingo'" 
+      [refsDia]="[{refs:'Café da manha',itens:[{produto:'Banana',quantidade:'2',unidade:'un'},
+                                               {produto:'Maça',quantidade:'1',unidade:'un'}]},
+                  {refs:'Jantar',itens:[{produto:'Frango',quantidade:'300',unidade:'gr'},
+                                        {produto:'Batata',quantidade:'200',unidade:'gr'}]}]"
+      ></app-card-dia>
     </ion-col>
     <ion-col class="coluna">
       <app-card-dia  [nome]="'Segunda-feira'"></app-card-dia>
@@ -33,3 +39,31 @@
     </ion-col>
   </ion-row>
 </ion-content>
+
+<!-- [{refs:'Café da manha',itens:[
+                            {produto: 'Banana',
+                            quantidade: 2,
+                            unidade: 'un'
+                            },
+                            {produto: 'Maça',
+                            quantidade: 1,
+                            unidade: 'un'
+                            }
+},refs:'Jantar',itens:[
+                      {produto: 'Frango',
+                      quantidade: '300',
+                      unidade: 'gr'
+                      },
+                      {produto: 'Batata',
+                      quantidade: '200',
+                      unidade: 'gr'
+                      }]
+
+
+
+
+
+<!-- [
+                {refs:'Café da manha',itens:['Banana','Maça'],quantidade:['2','3'],unidade:['un','un']},
+                {refs:'Jantar',itens:['Frango','Batata'],quantidade:['300','300'],unidade:['gr','gr']}
+                ] -->
